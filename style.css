@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    Font-size: 15px;
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+.container {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container .sedans,
+.container .suvs ,
+.container .luxury {
+    display: flex;
+    flex-direction: column;
+    color: #ffffffa6;
+    flex-basis: calc(100%/3);
+}
+.container .sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 24px;
+}
+.container .suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 16px;
+}
+.container .luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 15px;
+}
+
+.container .sedans img,
+.container .suvs img,
+.container .luxury img {
+    width: 70px;
+}
+.container .sedans h1,
+.container .suvs h1,
+.container .luxury h1 {
+    margin: 30px 0;
+    color: white;
+}
+.container .sedans .text,
+.container .suvs .text,
+.container .luxury .text {
+    margin-bottom: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container .sedans a,
+.container .suvs a,
+.container .luxury a {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.container .sedans a:hover {
+    color: #ffffffa6;
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid white;
+}
+.container .suvs a:hover {
+    color: #ffffffa6;
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid white;
+}
+.container .luxury a:hover {
+    color: #ffffffa6;
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid white;
+}
+.container .sedans a {
+    color: hsl(31, 77%, 52%);
+    margin: 35px 60px 40px 15px;
+}
+.container .suvs a {
+    color: hsl(184, 100%, 22%);
+    margin: 47px 60px 40px 15px;
+}
+.container .luxury a {
+    color: hsl(179, 100%, 13%);
+    margin: 46px 60px 40px 15px;
+}
+@media (max-width:375px) {
+    body {
+        font-size: 10px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 92%;
+        width: 95%;
+    }
+    .sedans {
+        height: calc(100%/3);
+        width: 100%;
+        padding: 5px;
+    }
+    .suvs {
+        height: calc(100%/3);
+        width: 100%;
+    }
+    .luxury {
+        height: calc(100%/3);
+        width: 100%;
+    }
+    .container .sedans img,
+    .container .suvs img,
+    .container .luxury img {
+        width: 45px;
+    }
+    .container .sedans h1,
+    .container .suvs h1,
+    .container .luxury h1 {
+        margin: 10px 0;
+        color: white;
+    }
+    .container .sedans a {
+        margin: 4px 160px 0px 35px;;
+    }
+    .container .suvs a {
+        margin: 4px 160px 0px 35px;;
+    }
+    .container .luxury a {
+        margin: 4px 160px 0px 35px;;
+    }
+}
